@@ -1,0 +1,31 @@
+{
+  "name": "lexescrow",
+  "version": "0.1.0",
+  "description": "Compliance-Gated Smart Contracts for Legal Escrow - BLI Legal Tech Hackathon 2026",
+  "scripts": {
+    "build:sol": "anchor build",
+    "test:sol": "anchor test",
+    "deploy:sol": "anchor deploy --provider.cluster devnet",
+    "oracle": "python3 compliance-oracle/main.py",
+    "oracle:test": "python3 compliance-oracle/test_oracle.py",
+    "listener": "node event-listener/index.js",
+    "dev": "cd dashboard && next dev",
+    "build:web": "cd dashboard && next build",
+    "start:web": "cd dashboard && next start"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.30.0",
+    "@solana/web3.js": "^1.95.0",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^20.0.0",
+    "chai": "^4.4.0",
+    "mocha": "^10.4.0",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^5.5.0"
+  }
+}

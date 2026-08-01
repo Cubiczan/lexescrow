@@ -1,0 +1,12 @@
+node_modules/
+.target/
+.anchor/
+.next/
+dist/
+*.so
+.env
+__pycache__/
+*.pyc
+.DS_Store/
+# Security: never commit private keys
+deploy-keypair.json

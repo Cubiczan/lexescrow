@@ -1,0 +1,19 @@
+[package]
+name = "lexescrow"
+version = "0.1.0"
+description = "Compliance-Gated Smart Contracts for Legal Escrow"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "lexescrow"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.30.0"
